@@ -25,6 +25,27 @@ function numberToArray(value) {
   return ret;
 }
 
+function addBig(left, right) {
+  var ret = [];
+
+  var carry = 0;
+  for (var i = 0; i < Math.max(left.length, right.length); i++) {
+    var leftValue = left.length > i ? left[i] : 0;
+    var rightValue = right.length > i ? right[i] : 0;
+
+    var digit = leftValue + rightValue + carry;
+    var carry = Math.floor(digit / 10);
+    digit = digit % 10;
+
+    ret.push(digit);
+  }
+  if (carry != 0) {
+    ret.push(carry);
+  }
+
+  return ret;
+}
+
 function arcEnd(value) {
   var ends = [
     [ 0.000000000, -1.000000000],
@@ -43,7 +64,6 @@ function arcEnd(value) {
 
 function pieCode(radius, step) {
   var largeArch = step>5 ? 1 : 0;
-  var radius = radius;
   
   var pos = arcEnd(step);
   var x2 = radius * pos[0];
@@ -57,12 +77,9 @@ function pieCode(radius, step) {
 }
 
 function earthAge(secondsFrom0) {
-  var age = [0,0,0,0,0,0,0,0,0,0,0,6,5,6,0,5,4,1];
-  var offset = numberToArray(secondsFrom0);
-  for (var i = 0; i < offset.length; i++) {
-    age[i] = offset[i];
-  }
-  return age;
+  var fromBoomTo0 = [0,0,0,0,0,0,0,0,0,8,4,0,8,6,2,3,4,1];
+  var from0ToNow = numberToArray(secondsFrom0);
+  return addBig(fromBoomTo0, from0ToNow);
 }
 
 function arrayToString(value) {

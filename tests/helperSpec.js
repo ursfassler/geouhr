@@ -31,15 +31,34 @@ describe("numberToArray", function() {
   
 });
 
-describe("earth age", function() {
+describe("add big numbers", function() {
 
-  it("should return the age of the world in seconds as array", function() {
-    expect(earthAge(0)).toEqual([0,0,0,0,0,0,0,0,0,0,0,6,5,6,0,5,4,1]);
-    expect(earthAge(12345678901)).toEqual([1,0,9,8,7,6,5,4,3,2,1,6,5,6,0,5,4,1]);
+  it("should return an array as big as the biggest", function() {
+    expect(addBig([], [])).toEqual([]);
+    expect(addBig([0], [0])).toEqual([0]);
+    expect(addBig([0, 0, 0], [0])).toEqual([0, 0, 0]);
+    expect(addBig([0], [0, 0, 0])).toEqual([0, 0, 0]);
+  });
+
+  it("should add two numbers", function() {
+    expect(addBig([3], [2])).toEqual([5]);
+    expect(addBig([3, 1, 9], [2, 3])).toEqual([5, 4, 9]);
+    expect(addBig([6], [7])).toEqual([3, 1]);
+    expect(addBig([5, 9, 9, 9], [5])).toEqual([0, 0, 0, 0, 1]);
+    expect(addBig([5], [5, 9, 9, 9])).toEqual([0, 0, 0, 0, 1]);
   });
 
 });
 
+describe("earth age", function() {
+
+  it("should return the age of the world in seconds as array", function() {
+    expect(earthAge(0)).toEqual([0,0,0,0,0,0,0,0,0,8,4,0,8,6,2,3,4,1]);
+    expect(earthAge(123456789)).toEqual([9,8,7,6,5,4,3,2,1,8,4,0,8,6,2,3,4,1]);
+    expect(earthAge(63612691242)).toEqual([2,4,2,1,9,6,2,1,6,1,1,1,8,6,2,3,4,1]);
+  });
+
+});
 
 describe("calculating the arc end position", function() {
 

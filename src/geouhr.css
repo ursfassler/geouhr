@@ -6,14 +6,14 @@ SPDX-License-Identifier:	GPL-3.0+
 #label
 {
   fill: #cfcfd0;
-  font-family: frutiger, sans-serif;
+  font-family: serifa, serif;
   font-size: 34px;
 }
 
 #time
 {
   fill: #9a9a9c;
-  font-family: serifa, serif;
+  font-family: frutiger, sans-serif;
   font-size: 18px;
 }
 

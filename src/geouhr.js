@@ -10,6 +10,7 @@ function init(evt){
 
 function timer() {
   document.getElementById("centerAnimation").beginElement();
+  updateSeconds();
 }
 
 function updateSeconds() {

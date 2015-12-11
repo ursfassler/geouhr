@@ -27,99 +27,14 @@ SPDX-License-Identifier:	GPL-3.0+
   fill: #ff67cd
 }
 
-#ring1
-{
-  fill: #627f9d
-}
-
-#ring2
-{
-  fill: #ffbbbd
-}
-
-#ring3
-{
-  fill: #eeeeee
-}
-
-#ring4
-{
-  fill: #d8eff8
-}
-
-#ring5
-{
-  fill: #ff8888
-}
-
-#ring6
-{
-  fill: #8B9A53
-}
-
-#ring7
-{
-  fill: #D272B1
-}
-
-#ring8
-{
-  fill: #FF9172
-}
-
-#ring9
-{
-  fill: #83BEFF
-}
-
-#ring10
-{
-  fill: #FFFC0D
-}
-
-#ring11
-{
-  fill: #2DC1F0
-}
-
-#ring12
-{
-  fill: #03E517
-}
-
-#ring13
-{
-  fill: #CB0000
-}
-
-#ring14
-{
-  fill: #3DE5D6
-}
-
-#ring15
-{
-  fill: #709dac
-}
-
-#ring16
-{
-  fill: #4257b2
-}
-
-#ring17
-{
-  fill: #e6a06c
-}
-
-#ring18
-{
-  fill: #bad087
-}
-
 #arc0
 {
   fill: #8a1b01
+}
+
+#ring1
+{
+  fill: #627f9d
 }
 
 #arc1
@@ -127,9 +42,19 @@ SPDX-License-Identifier:	GPL-3.0+
   fill: #2C3E50
 }
 
+#ring2
+{
+  fill: #ffbbbd
+}
+
 #arc2
 {
   fill: #FC4349
+}
+
+#ring3
+{
+  fill: #eeeeee
 }
 
 #arc3
@@ -137,9 +62,19 @@ SPDX-License-Identifier:	GPL-3.0+
   fill: #999999
 }
 
+#ring4
+{
+  fill: #d8eff8
+}
+
 #arc4
 {
   fill: #6DBCDB
+}
+
+#ring5
+{
+  fill: #ff8888
 }
 
 #arc5
@@ -147,9 +82,19 @@ SPDX-License-Identifier:	GPL-3.0+
   fill: #bb0000
 }
 
+#ring6
+{
+  fill: #8B9A53
+}
+
 #arc6
 {
   fill: #414827
+}
+
+#ring7
+{
+  fill: #D272B1
 }
 
 #arc7
@@ -157,9 +102,19 @@ SPDX-License-Identifier:	GPL-3.0+
   fill: #6B3A5A
 }
 
+#ring8
+{
+  fill: #FF9172
+}
+
 #arc8
 {
   fill: #A33621
+}
+
+#ring9
+{
+  fill: #83BEFF
 }
 
 #arc9
@@ -167,9 +122,19 @@ SPDX-License-Identifier:	GPL-3.0+
   fill: #0D3285
 }
 
+#ring10
+{
+  fill: #FFFC0D
+}
+
 #arc10
 {
   fill: #ADAB08
+}
+
+#ring11
+{
+  fill: #2DC1F0
 }
 
 #arc11
@@ -177,9 +142,19 @@ SPDX-License-Identifier:	GPL-3.0+
   fill: #176179
 }
 
+#ring12
+{
+  fill: #03E517
+}
+
 #arc12
 {
   fill: #02690B
+}
+
+#ring13
+{
+  fill: #CB0000
 }
 
 #arc13
@@ -187,9 +162,19 @@ SPDX-License-Identifier:	GPL-3.0+
   fill: #700000
 }
 
+#ring14
+{
+  fill: #3DE5D6
+}
+
 #arc14
 {
   fill: #217B73
+}
+
+#ring15
+{
+  fill: #709dac
 }
 
 #arc15
@@ -197,14 +182,29 @@ SPDX-License-Identifier:	GPL-3.0+
   fill: #005572
 }
 
+#ring16
+{
+  fill: #4257b2
+}
+
 #arc16
 {
   fill: #021a7d
 }
 
+#ring17
+{
+  fill: #e6a06c
+}
+
 #arc17
 {
   fill: #c65400
+}
+
+#ring18
+{
+  fill: #bad087
 }
 
 #arc18

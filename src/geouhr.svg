@@ -64,7 +64,7 @@ SPDX-License-Identifier:	GPL-3.0+
       <circle cx="0" cy="0" r="10" id="arc0">
           <animate
             id="centerAnimation"
-            onend="updateSeconds();"
+            onbegin="updateSeconds();"
             attributeType="XML"
             attributeName="opacity"
             dur="0.25s"

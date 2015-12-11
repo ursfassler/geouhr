@@ -60,14 +60,12 @@ SPDX-License-Identifier:	GPL-3.0+
       <path id="arc2" />
       <circle cx="0" cy="0" r="19.5" id="ring1" />
       <path id="arc1" />
-      <circle cx="0" cy="0" r="9.5" id="ring0" />
-      <circle cx="0" cy="0" r="10" id="arc0">
+      <circle cx="0" cy="0" r="10" fill="#8a1b01">
           <animate
             id="centerAnimation"
-            attributeType="XML"
-            attributeName="opacity"
+            attributeName="fill"
             dur="0.20s"
-            values="1;0;1"
+            values="#8a1b01;#ff67cd;#8a1b01"
             keyTimes="0;0.5;1"
           />
       </circle>

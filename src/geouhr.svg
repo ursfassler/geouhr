@@ -5,14 +5,6 @@ Copyright 2015 Urs Fässler, www.bitzgi.ch
 SPDX-License-Identifier:	GPL-3.0+
 -->
 
-<!--
-
-To rotate it by 90 deg change
-  viewBox="0 0 720 405"
-  transform="matrix(0,-1,1,0,0,202.5)"
-
--->
-
 <?xml-stylesheet type="text/css" href="geouhr.css" ?>    
 
 <svg
@@ -25,7 +17,9 @@ To rotate it by 90 deg change
   viewBox="0 0 405 720"
   onload="init(evt);"
 >
-  <script xlink:href="helper.js" type="text/javascript" />
+  <script xlink:href="pie.js" type="text/javascript" />
+  <script xlink:href="bigNumber.js" type="text/javascript" />
+  <script xlink:href="earthAge.js" type="text/javascript" />
   <script xlink:href="geouhr.js" type="text/javascript" />
   <g transform="matrix(1,0,0,1,202.5,0)">
     <rect id="background" x="-302.5" y="-100" width="605" height="920" />
